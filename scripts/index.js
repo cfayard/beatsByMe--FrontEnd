@@ -59,7 +59,23 @@
     function clickKick(event){
         event.preventDefault()
     }
-    
+    const button1 = document.querySelector(".js-restart");
+button1.addEventListener("click", ()=> {
+    drums.loop();
+  // drums.pause();
+})
+button1.addEventListener("touchstart", ()=> {
+    drums.loop();
+    // drums.pause();
+  })
+const button2 = document.querySelector(".js-stop");
+button2.addEventListener("click", ()=> {
+  drums.stop();
+})
+button2.addEventListener("touchstart", ()=> {
+    drums.stop();
+  })
+
     
     
     

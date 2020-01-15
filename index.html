@@ -8,15 +8,14 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
-    
-    
     <title>Make🔥Beats!</title>
 </head>
 <body>
+    
     <header>
-        
         <h1 style="background:url(images/sunBackground.jpeg)">🔊beatsByME🔊</h1>
     </header>
+    
     <div class="pads">
         <div class="hiHat">
             <button style="background:url(images/Red_button.png)" class="hihatButton"
@@ -49,24 +48,23 @@
                 onclick= "playKick()"> Kick
             </button>
         </div>
-        </div>  
+    </div>  
+    
     <div>
-        <button class="js-restart">
+        <button class="js-restart" onclick="drums.loop()">
             Play
         </button>
-        <button class="js-stop">
+        <button class="js-stop" onclick="drums.stop()">
             Stop
         </button>
     </div>
        
-<div class = "sequencer"></div>
-        <script 
+        <script class = "sequencer"
             src="/scripts/sequencer.js">
         </script>
-    </div>
-</div>
-    <script src="/scripts/sounds.js"></script>
-    <script src="/scripts/index.js"></script>
+        <script src="/scripts/sounds.js"></script>
+        <script src="/scripts/index.js"></script>
+
 </body>
 </html>
 

@@ -85,22 +85,24 @@ sequencerPattern = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
   
   drawMatrix();
 }  
-const button1 = document.querySelector(".js-restart");
-button1.addEventListener("click", ()=> {
-  drums.loop();
-  // drums.pause();
-})
-const button2 = document.querySelector(".js-stop");
-button2.addEventListener("click", ()=> {
-  drums.stop();
-})
+// const button1 = document.querySelector(".js-restart");
+// button1.addEventListener("click", ()=> {
+//   drums.loop();
+//   // drums.pause();
+// })
+// const button2 = document.querySelector(".js-stop");
+// button2.addEventListener("click", ()=> {
+//   drums.stop();
+// })
 
 function keyPressed() {
   if (key === " ") {
     if (hh.isLoaded() && snare2.isLoaded() && kick808.isLoaded() && midBassSeq.isLoaded() && trumpet.isLoaded() && subBass.isLoaded()) {
       if (!drums.isPlaying) { 
         drums.metro.metroTicks = 0; //makes animator start over at beginning after pressing spacebar
-      drums.loop();
+      drums.start();
+      // console.log('hey the drums')
+      // drums.resume();
       } else {
         drums.pause();
       }

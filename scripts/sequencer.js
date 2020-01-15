@@ -9,6 +9,7 @@ let canvas;
 let sequncerPattern;
 let cursorPos;
 
+
 function setup() {
   canvas = createCanvas(360, 140);
   canvas.mousePressed(canvasPressed);
@@ -184,3 +185,9 @@ function drawPlayhead(beatIndex) {
   fill(255, 0, 0, 30); //fourth value transparency
   rect((beatIndex-1) * cellWidth, 0, cellWidth, height);
 }
+
+// function windowResized(){
+//   console.log("hello world");
+//   resizeCanvas(windowHeight, windowWidth);
+  
+// }

@@ -1,0 +1,17 @@
+beatByMe v2
+- make commits more often
+- make page mobile responsive
+- include backend in beatByMe v1
+- 25 sounds each mp3 format or ogg if possible
+- user login forms
+- user save work history data
+- start/stop button
+- make new audio app within app
+- user upload sound to use?
+- exporting loops
+- make buttons look better, add animation
+- ***convert sounds from APi to our own database
+- when pressing restart button it stays pressed down and the space bar to start and stop doesnt work unless you click out of the button
+- improve look of restart button
+- pop up menus of instructions
+    - how to start, load in different sounds, save, bpms, general idea of how to make a beat

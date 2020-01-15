@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
     <title>Make🔥Beats!</title>
 </head>
+
 <body>
     
     <header>
@@ -51,16 +52,18 @@
     </div>  
     
     <div>
-        <button class="js-restart" onclick="drums.loop()">
+        <!-- Does the onclick do anything????? -->
+        <button class="js-restart" onclick="touchStarted()">
             Play
         </button>
+         <!-- Does the onclick do anything????? -->
         <button class="js-stop" onclick="drums.stop()">
             Stop
         </button>
     </div>
        
         <script class = "sequencer"
-            src="/scripts/sequencer.js">
+        src="/scripts/sequencer.js">
         </script>
         <script src="/scripts/sounds.js"></script>
         <script src="/scripts/index.js"></script>

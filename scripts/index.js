@@ -1,4 +1,9 @@
-    
+    // This is how we got around the user gesture warning in the console. YAY
+    function touchStarted() {
+        // console.log("The sequencer sounds have been gestured!!!!!!!!!!!!!!!!")
+        getAudioContext().resume()
+      }
+
     function fetchPreview(id){
         const previewURL = `https://freesound.org/apiv2/sounds/${id}/?token=p5JJnxO4rzVs7KfSkL06XOGh9hyzTrw6x7PJpTHG`;
         fetch(previewURL)

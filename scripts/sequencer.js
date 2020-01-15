@@ -100,7 +100,7 @@ function keyPressed() {
     if (hh.isLoaded() && snare2.isLoaded() && kick808.isLoaded() && midBassSeq.isLoaded() && trumpet.isLoaded() && subBass.isLoaded()) {
       if (!drums.isPlaying) { 
         drums.metro.metroTicks = 0; //makes animator start over at beginning after pressing spacebar
-      drums.start();
+      drums.loop();
       // console.log('hey the drums')
       // drums.resume();
       } else {

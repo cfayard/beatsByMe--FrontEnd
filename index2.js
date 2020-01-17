@@ -9,7 +9,7 @@ window.addEventListener("load", () => {
     
     
       const pads = document.querySelectorAll(".pads div");
-      const pads2 = document.querySelectorAll(".pads2 div")
+      const pads2 = document.querySelectorAll(".pads2 div");
     
     
       const sound_array = [

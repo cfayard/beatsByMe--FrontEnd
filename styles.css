@@ -15,18 +15,6 @@ header h1 {
   border-style: solid;
 }
 
-.pads {
-  /* width:fit-content; */
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  /* justify-items: center; */
-  /* position: relative; */
- /* background-color: cornsilk; */
- margin-top: 100px;
-}
-
 .p5Canvas {
   /* display: flex; */
   /* flex-flow: row; */
@@ -104,22 +92,33 @@ body {
   
   .pads {
     /* background: lightblue; */
-    width: 100%;
+    width: 30%;
     display: flex;
-  }
+    width:fit-content;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+     /* justify-content: center; */
+    /* justify-items: center; */
+    /* position: relative; */
+   margin-top: 100px;
+     padding: 2px 2px;
+
+}
+
   .pads2 {
     /* background: lightblue; */
-    width: 100%;
+    width: fit-content%;
     display: flex;
   }
   
   .pads > div {
-    height: 200px;
+    height: 100px;
     width: 100px;
     flex: 1;
   }
   .pads2 > div {
-    height: 200px;
+    height: 100px;
     width: 100px;
     flex: 1;
   }

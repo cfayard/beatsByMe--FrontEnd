@@ -1,8 +1,5 @@
     // This is how we got around the user gesture warning in the console. YAY
-    function touchStarted() {
-        // console.log("The sequencer sounds have been gestured!!!!!!!!!!!!!!!!")
-        getAudioContext().resume()
-      }
+
 
     function fetchPreview(id){
         const previewURL = `https://freesound.org/apiv2/sounds/${id}/?token=p5JJnxO4rzVs7KfSkL06XOGh9hyzTrw6x7PJpTHG`;
@@ -19,6 +16,9 @@
     const snareFetch = fetchPreview(496889)
     const kickFetch = fetchPreview(496890)
     
+   
+
+
     const kick = document.querySelector(".kick")
     kick.src = soundMenu.kick
     
@@ -64,22 +64,8 @@
     function clickKick(event){
         event.preventDefault()
     }
-    const button1 = document.querySelector(".js-restart");
-button1.addEventListener("click", ()=> {
-    drums.loop();
-  // drums.pause();
-})
-button1.addEventListener("touchstart", ()=> {
-    drums.loop();
-    // drums.pause();
-  })
-const button2 = document.querySelector(".js-stop");
-button2.addEventListener("click", ()=> {
-  drums.stop();
-})
-button2.addEventListener("touchstart", ()=> {
-    drums.stop();
-  })
+
+
 
     
     

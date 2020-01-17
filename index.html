@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+     <!-- <script src="visuzlizer.js"></script>  -->
     <title>Make🔥Beats!</title>
 </head>
 
@@ -16,8 +17,8 @@
     <header>
         <h1 style="background:url(images/sunBackground.jpeg)">🔊beatsByME🔊</h1>
     </header>
-    
-    <div class="pads">
+
+    <!-- <div class="pads">
         <div class="hiHat">
             <button style="background:url(images/Red_button.png)" class="hihatButton"
                 onclick= "playHiHat()"> Hi-hat
@@ -47,10 +48,43 @@
         <div class="kick">
             <button style="background:url(images/Red_button.png)" class="hihatButton"
                 onclick= "playKick()"> Kick
-            </button>
+            </button> -->
+        <!-- </div> -->
+        <!-- <div class="orch1">
+            <button style="background:url(images/Red_button.png) class="hihatButton">
+                <embed src="assets/Orch_hit_1.mp3" 
+                align="baseline" border="0" width="145" 
+                height="60" autostart="false" loop="true">
+            </button> -->
+           
+        
+            
         </div>
     </div>  
-    
+
+    <div class="pads" >
+        <div class="pad1">
+         <h1>A</h1>
+        </div>
+        <div class="pad2">
+        <h1>S</h1>
+        </div>
+        <div class="pad3">
+        <h1>D</h1>
+        </div>
+    </div>  
+    <div class="pads2">
+        <div class="pad4">
+        <h1>F</h1>
+        </div>
+        <div class="pad5">
+        <h1>G</h1>
+        </div>
+        <div class="pad6">
+         <h1>H</h1>
+        </div>
+    </div>
+
     <div>
         <!-- Does the onclick do anything????? -->
         <button class="js-restart" onclick="touchStarted()">
@@ -65,8 +99,9 @@
         <script class = "sequencer"
         src="/scripts/sequencer.js">
         </script>
-        <script src="/scripts/sounds.js"></script>
-        <script src="/scripts/index.js"></script>
+        <!-- <script src="/scripts/sounds.js"></script> -->
+        <script src="index2.js"></script>
+        
 
 </body>
 </html>

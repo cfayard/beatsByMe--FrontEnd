@@ -9,6 +9,10 @@ let canvas;
 let sequncerPattern;
 let cursorPos;
 
+function touchStarted() {
+  // console.log("The sequencer sounds have been gestured!!!!!!!!!!!!!!!!")
+  getAudioContext().resume()
+}
 
 function setup() {
   canvas = createCanvas(360, 140);
@@ -24,9 +28,9 @@ function setup() {
   // snare2 = playSnare();
   hh = loadSound('assets/hat.wav', () => {});
   // hh = playHiHat();
-  midBassSeq = loadSound('assets/115525__ongitak__bass-stab-11.wav', () => {});
+  midBassSeq = loadSound('assets/133100__klankbeeld__horror-ambience-10.wav', () => {});
   // midBassSeq = playChirp();
-  trumpet = loadSound('assets/waterDrop.wav', () => {});
+  trumpet = loadSound('assets/Orch_hit_4.mp3', () => {});
   // trumpet = playTrump();
   subBass = loadSound('assets/410149__screamstudio__kick-drum.wav', () => {});
   // subBass = playLowBass();
@@ -40,12 +44,12 @@ function setup() {
   // fx = loadSound('assets/fx.mp3', () => {});
 
     
-kick808Pat= [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+kick808Pat= [1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1 , 0];
 snarePat= [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0];
-hhPat= [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+hhPat= [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 midBassSeqPat= [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-trumpetPat= [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-subBassPat= [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+trumpetPat= [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 , 0, 0, 0, 0, 0];
+subBassPat= [1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0];
   
 sequencerPattern = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 
@@ -81,7 +85,7 @@ sequencerPattern = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
   bpmCTRL = createSlider(30, 600, 80, 1);
   bpmCTRL.position("fixed", 500, 500); //Placement of slider
   bpmCTRL.input(() => {drums.setBPM(bpmCTRL.value())});
-  drums.setBPM('60');
+  drums.setBPM('77');
   
   drawMatrix();
 }  
@@ -193,3 +197,19 @@ function drawPlayhead(beatIndex) {
 //   resizeCanvas(windowHeight, windowWidth);
   
 // }
+const button1 = document.querySelector(".js-restart");
+button1.addEventListener("click", ()=> {
+    drums.loop();
+  // drums.pause();
+})
+button1.addEventListener("touchstart", ()=> {
+    drums.loop();
+    // drums.pause();
+  })
+const button2 = document.querySelector(".js-stop");
+button2.addEventListener("click", ()=> {
+  drums.stop();
+})
+button2.addEventListener("touchstart", ()=> {
+    drums.stop();
+  })

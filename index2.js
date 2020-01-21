@@ -13,16 +13,16 @@ window.addEventListener("load", () => {
     
     
       const sound_array = [
-        "assets/7634__ls__loop1-stripped-down-againrecycled-010.wav",
-        "assets/133100__klankbeeld__horror-ambience-10.wav",
-        "assets/465293__esistnichtsoernst__smooth-strings.wav"
+        "assets/stingsForPads 1-Concert Flute Solo.mp3",
+        "assets/stingsForPads 2-Concert Flute Solo.mp3",
+        "assets/stingsForPads 3-Concert Flute Solo.mp3"
     ];
 
 
       const sound_array2 = [
-        "assets/fx.mp3",
-        "assets/53933__meutecee__trumpethit03.wav",
-        "assets/207555__patricklieberkind__deep-cinematic-rumble-stereo.wav"
+        "assets/stingsForPads 4-Concert Flute Solo.mp3",
+        "assets/stingsForPads 5-Concert Flute Solo.mp3",
+        "assets/stingsForPads 6-Concert Flute Solo.mp3"
       ];
     
       pads.forEach((pad, index) => {

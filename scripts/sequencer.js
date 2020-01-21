@@ -9,10 +9,7 @@ let canvas;
 let sequncerPattern;
 let cursorPos;
 
-function touchStarted() {
-  // console.log("The sequencer sounds have been gestured!!!!!!!!!!!!!!!!")
-  getAudioContext().resume()
-}
+
 
 function setup() {
   canvas = createCanvas(360, 140);
@@ -35,15 +32,6 @@ function setup() {
   subBass = loadSound('assets/410149__screamstudio__kick-drum.wav', () => {});
   // subBass = playLowBass();
 
-
-  // kick808 = loadSound('assets/808kick.wav', () => {});
-  // snare2 = loadSound('assets/Snare.wav', () => {});
-  // hh = loadSound("assets/hat.wav");
-  // shaker = loadSound('assets/shaker.wav', () => {});
-  // oh = loadSound('assets/oh.wav', () => {});
-  // fx = loadSound('assets/fx.mp3', () => {});
-
-    
 kick808Pat= [1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1 , 0];
 snarePat= [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0];
 hhPat= [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
@@ -82,22 +70,13 @@ sequencerPattern = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
   drums.addPhrase(subBassPhrase);
   drums.addPhrase('seq', sequence, sequencerPattern);
  
-  bpmCTRL = createSlider(30, 600, 80, 1);
-  bpmCTRL.position("fixed", 500, 500); //Placement of slider
+  bpmCTRL = createSlider(60, 160, 80, 1);
+  bpmCTRL.position("fixed", 125, 500); //Placement of slider
   bpmCTRL.input(() => {drums.setBPM(bpmCTRL.value())});
   drums.setBPM('77');
   
   drawMatrix();
 }  
-// const button1 = document.querySelector(".js-restart");
-// button1.addEventListener("click", ()=> {
-//   drums.loop();
-//   // drums.pause();
-// })
-// const button2 = document.querySelector(".js-stop");
-// button2.addEventListener("click", ()=> {
-//   drums.stop();
-// })
 
 function keyPressed() {
   if (key === " ") {
@@ -192,11 +171,7 @@ function drawPlayhead(beatIndex) {
   rect((beatIndex-1) * cellWidth, 0, cellWidth, height);
 }
 
-// function windowResized(){
-//   console.log("hello world");
-//   resizeCanvas(windowHeight, windowWidth);
-  
-// }
+
 const button1 = document.querySelector(".js-restart");
 button1.addEventListener("click", ()=> {
     drums.loop();

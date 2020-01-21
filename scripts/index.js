@@ -1,20 +1,27 @@
     // This is how we got around the user gesture warning in the console. YAY
 
 
-    function fetchPreview(id){
-        const previewURL = `https://freesound.org/apiv2/sounds/${id}/?token=p5JJnxO4rzVs7KfSkL06XOGh9hyzTrw6x7PJpTHG`;
-        fetch(previewURL)
-        .then (r => r.json())
-        .then((obj) => {
-            console.log(obj.previews["preview-hq-mp3"])
-        });
-    }
-    const lowBassFetch = fetchPreview(115525)
-    const trumpFetch = fetchPreview(273870)
-    const chirpFetch = fetchPreview(115525)
-    const hiHatFetch = fetchPreview(496888)
-    const snareFetch = fetchPreview(496889)
-    const kickFetch = fetchPreview(496890)
+    // function fetchPreview(id){
+    //     const previewURL = `https://freesound.org/apiv2/sounds/${id}/?token=p5JJnxO4rzVs7KfSkL06XOGh9hyzTrw6x7PJpTHG`;
+    //     fetch(previewURL)
+    //     .then (r => r.json())
+    //     .then((obj) => {
+    //         console.log(obj.previews["preview-hq-mp3"])
+    //     });
+    // }
+    // const lowBassFetch = fetchPreview(115525)
+    // const trumpFetch = fetchPreview(273870)
+    // const chirpFetch = fetchPreview(115525)
+    // const hiHatFetch = fetchPreview(496888)
+    // const snareFetch = fetchPreview(496889)
+    // const kickFetch = fetchPreview(496890)
+
+    // import entire SDK
+var AWS = require('aws-sdk');
+// import AWS object without services
+var AWS = require('aws-sdk/global');
+// import individual service
+var S3 = require('aws-sdk/clients/s3');
     
    
 

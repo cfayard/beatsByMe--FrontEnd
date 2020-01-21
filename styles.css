@@ -5,6 +5,7 @@ html {
   background-attachment: fixed;
   min-height: 100vh;
   /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-family: 'Sedgwick Ave Display', cursive;
 }
  
 header  {
@@ -16,6 +17,7 @@ header  {
   border-style: solid;
   background-color: black;
   background-image: url(images/sunlike.jpeg);
+  font-family: 'Sedgwick Ave Display', cursive;
  }
 
 .p5Canvas {
@@ -59,6 +61,9 @@ body {
   margin-top: 50px;
   margin-bottom: 0px;
   border-color: springgreen;
+  font-family: 'Sedgwick Ave Display', cursive;
+  background-image: url(images/sunlike.jpeg);
+  
 }
 
 .js-stop {
@@ -70,6 +75,8 @@ body {
   margin-top: 50px;
   margin-bottom: 0px;
   border-color: springgreen;
+  font-family: 'Sedgwick Ave Display', cursive;
+  background-image: url(images/sunlike.jpeg);
 }
 
 .hihatButton {

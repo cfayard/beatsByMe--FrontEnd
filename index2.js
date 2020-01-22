@@ -13,16 +13,16 @@ window.addEventListener("load", () => {
     
     
       const sound_array = [
-        "assets/stingsForPads 1-Concert Flute Solo.mp3",
-        "assets/stingsForPads 2-Concert Flute Solo.mp3",
-        "assets/stingsForPads 3-Concert Flute Solo.mp3"
+        "assets/Chardonnay 001 D#Maj7.wav",
+        "assets/Cherry 002 G#min9.wav",
+        "assets/Cherry 003 Gmin9.wav"
     ];
 
 
       const sound_array2 = [
-        "assets/stingsForPads 4-Concert Flute Solo.mp3",
-        "assets/stingsForPads 5-Concert Flute Solo.mp3",
-        "assets/stingsForPads 6-Concert Flute Solo.mp3"
+        "assets/Cherry 004 D#min9.wav",
+        "assets/Cherry 005 Cmin9.wav",
+        "assets/Cherry 006 A#min9.wav"
       ];
     
       pads.forEach((pad, index) => {

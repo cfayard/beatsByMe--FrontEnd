@@ -9,7 +9,10 @@ let canvas;
 let sequncerPattern;
 let cursorPos;
 
-
+function touchStarted() {
+  // console.log("The sequencer sounds have been gestured!!!!!!!!!!!!!!!!")
+  getAudioContext().resume()
+}
 
 function setup() {
   canvas = createCanvas(360, 140);

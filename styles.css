@@ -1,8 +1,8 @@
 html {
-  /* background-image: url("images/orange_clouds.jpg"); */
+  background-image: url("images/redgreensmoke.jpg");
   background-color: black;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   min-height: 100vh;
   /* font-family: Georgia, 'Times New Roman', Times, serif; */
   font-family: 'Sedgwick Ave Display', cursive;
@@ -212,7 +212,7 @@ body {
   
 .vz-wrapper.-canvas {
      position: absolute;
-     top: 153%; 
+     top: 165%; 
       left: 48%; 
     transform: translate(-50%, -50%); 
     /* height: initial;  */

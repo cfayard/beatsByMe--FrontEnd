@@ -13,16 +13,16 @@ window.addEventListener("load", () => {
     
     
       const sound_array = [
-        "assets/7634__ls__loop1-stripped-down-againrecycled-010.wav",
-        "assets/133100__klankbeeld__horror-ambience-10.wav",
-        "assets/465293__esistnichtsoernst__smooth-strings.wav"
+        "assets/Orch_hit_1.mp3",
+        "assets/Orch_hit_3.mp3",
+        "assets/Cherry 003 Gmin9.wav"
     ];
 
 
       const sound_array2 = [
-        "assets/fx.mp3",
-        "assets/53933__meutecee__trumpethit03.wav",
-        "assets/207555__patricklieberkind__deep-cinematic-rumble-stereo.wav"
+        "assets/Cherry 004 D#min9.wav",
+        "assets/Cherry 005 Cmin9.wav",
+        "assets/Cherry 006 A#min9.wav"
       ];
     
       pads.forEach((pad, index) => {

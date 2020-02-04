@@ -13,8 +13,8 @@ window.addEventListener("load", () => {
     
     
       const sound_array = [
-        "assets/Chardonnay 001 D#Maj7.wav",
-        "assets/Cherry 002 G#min9.wav",
+        "assets/Orch_hit_1.mp3",
+        "assets/Orch_hit_3.mp3",
         "assets/Cherry 003 Gmin9.wav"
     ];
 
